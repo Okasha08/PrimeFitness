@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+     <link rel="icon" type="image/x-icon" href="img/logo/fav2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Prime fitness</title>
+</head>
+
+<body>
+
+<div class="row pre-nav">
+            <div class="col-md-4  "></div>
+            <div class="col-md-4 logo">
+                <img src="img/logo/Hnet.com-image.png" alt="" class="img1">
+            </div>
+            <div class="col-md-4 ">
+
+                <button type="button" class="btn L1 btn-outline-light but-1" id="but1"
+                    onclick="myBTN(this.id)">LOGIN</button>
+
+                <button type="button" class="btn L2 btn-outline-light but-2 " id="but2"
+                    onclick="myBTn(this.id)">REGISTER</button>
+
+
+
+            </div>
+        </div>
+  
+<!--mobile version-->
+<div class="mobile-work-nav">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a class="nav-link dropdown-toggle active s" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">workout </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item font-weight-bold  " href="group.html">Group exercise</a>
+    <a class="dropdown-item font-weight-bold  " href="cycling.html">Cycling</a>
+    <a class="dropdown-item font-weight-bold  " href="Swimming.html">Swimming</a>    
+</div>
+  <a href="Spa.html">Salon & Spa</a>
+  <a href="Fitness Diet Plane.html">Diet</a>
+   <a href="Gallery.html">Gallery</a>
+    <a href="equipment.html">Equipments</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="About us.html">About us</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn btn-warning logs" href="login.html">Login</a>
+  <a class="btn btn-dark logs" href="register.html">Register</a>
+</div>
+<div class="col-12 uper-mobile">
+<div class="row">
+    <div class="col-6">
+        <span style="font-size:22px;cursor:pointer" class="mobile-nav-open" onclick="openNav()">&#9776;  </span>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoside">
+        <img src="img/logo/Hnet.com-image.png" class="form-inline" height="50">
+    </div>
+</div>
+</div>
+</div>
+
+<div class="bg-nav-cont">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"> Home</a>
+   <a href="group.html">Group Exercise</a>
+   <a href="cycling.html">Cycling</a>
+   <a href="Swimming.html"> Swimming</a>
+    <a href="Gallery.html"> Gallery</a>
+  <a href="Fitness Diet Plane.html"> Diet</a>
+  <a href="Spa.html"> Salon & Spa</a>
+  <a href="equipment.html"> Equipments</a>
+  <a href="About us.html"> About us</a>
+  <a href="FAQ.html"> FAQ</a>
+  <a href="contact.html"> Contact Us</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-angle-down"></i>
+  </a>
+ 
+</div>
+</div>
+</div>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>    
+
+    <!-- SLIDER -->
+    <div class="splitview skewed">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h1>Feel Great.</h1>
+                    <p>Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Original">
+            </div>
+        </div>
+
+        <div class="panel top">
+            <div class="content">
+                <div class="description">
+                    <h1>Body and Mind.</h1>
+                    <p>Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.</p>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1486739985386-d4fae04ca6f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Duotone">
+            </div>
+        </div>
+
+        <div class="handle"></div>
+    </div>
+   
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-6 fit-img mt-5" data-aos="fade-right">
+                    <img src="img/prime-fitness/fitness-1.JPG" alt="" class="fitness-1">
+                </div>
+                <div class="col-md-6 first">
+                    <h3 class="para-head">WELCOME TO THE PRIME FITNESS CLUB ™</h3>
+                    <p class="para-1">
+                        Prime Fitness is keeping our commitment to clean as we welcome you back. We’ve been doing our
+                        part to make our clean club even cleaner with Touchless Check-In, Cleaning Stations stocked
+                        with disinfectant spray, and practicing Social Fitnessing™ to give our members a little extra
+                        room.
+
+                    </p>
+
+
+
+
+                </div>
+            </div>
+
+
+               <div class="container">
+                   <div class="row">
+                <div class="col-md-6 first-1 atprime">
+                    <h3 class="para-head">YOUR FITNESS IS ESSENTIAL ™</h3>
+                    <p class="para-1 ">At Prime Fitness, we believe your fitness is essential™. Making your overall
+                        physical and mental
+                        wellness a priority will melt away stress, decrease anxiety, and increase your overall positive
+                        energy levels, and you’ll feel healthy and strong throughout the year!</p>
+                </div>
+                <div class="col-md-6 j" data-aos="fade-left">
+                    <img src="img/prime-fitness/fitness-2.JPG" alt="" class="fitness-2 newtop">
+                </div>
+            </div>
+        </div>
+
+
+
+         <div class="container">
+             <div class="row">
+                <div class="col-md-6 j" data-aos="zoom-in">
+                    <img src="img/prime-fitness/fitness-3.JPG" alt="" class="fitness-1 oldtop">
+                </div>
+                <div class="col-md-6 first-1">
+                    <h3 class="para-head">
+                        PROUD TO BE THE FIRST FITNESS BRAND WITH THE WELL HEALTH-SAFETY RATING</h3>
+                    <p class="para-1">
+                        Gym confidently in our Well Health Safety Rated clubs</p>
+                    <p class="para-1">
+                        You’ll soon find a Well Health Safety Seal on the front door of every Planet Fitness club.
+                        Backed
+                        by science and evaluated by third-party experts, this seal means you can run, curl, lift, squat,
+                        press, walk and gym confidently in the Prime Fitness Club™</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+         <div class="container">
+             <div class="row">
+                <div class="col-md-6 first-1">
+                    <p class="para-1">See what Prime Fitness is all about!</p>
+                    <h3 class="para-head-2">TAKE A VIRTUAL CLUB TOUR!</h3>
+                    <p class="para-1">Join us on a virtual club tour around a Prime Fitness. You’ll learn all about the
+                        different
+                        areas of the club and Teddy will show you how to get the most out of a membership and where you
+                        can start your fitness journey.</p>
+
+                    <a href="" class="icon">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"> </i>
+                        <p class="para-head-a"><u> Watch the Club Tour!</u></p>
+
+                    </a>
+                </div>
+                <div class="col-md-6 k" data-aos="zoom-out-left">
+                    <img src="img/prime-fitness/fitness-5.jpg" alt="" class="fitness-3">
+                </div>
+
+            </div>
+        </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-md-6 kk" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="img/prime-fitness/fitness-4.JPG" alt="" class="fitness-1 keepmovin">
+                </div>
+                <div class="col-md-6 first-1">
+                    <h3 class="para-head">LET'S KEEP MOVIN’</h3>
+                    <p class="para-1">
+                        We want our members to gym confidently, therefore, members, guests and PF Team Members should
+                        adhere to state/local mask requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        
+<div class="col-md-12">
+    <!-- MEMBERSHIP PLANS -->
+    <div class="col-md-12">
+        <div class="row mt-5 ">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body bg-warning  basic">
+                        <div class="basic-head mx-auto w-50 ">
+                            <h3 class="head">Basic Plan</h3>
+                        </div>
+
+                        <ul class="basic-card">
+                            <li>6 visits per month</li>
+                            <li>complete club tour</li>
+                            <li>Basic trainings</li>
+                            <li>Free first Month Trial</li>
+                            <li>On-demand Workout Classes</li>
+                        </ul>
+
+                        <div class="price mx-auto w-25 h-100">
+                            <p class="pb-3">$15 Per month</p>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-dark enroll mt-5 mx-auto"> subscribe now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body premium ">
+                        <div class="basic-head mx-auto w-75 h ">
+                            <h3 class="head pt-1 ">Premium Plan</h3>
+                        </div>
+
+                        <ul class="basic-card text-warning">
+                            <li>6 visits per month</li>
+                            <li>complete club tour</li>
+                            <li>Advanced trainings</li>
+                            <li>Personal Trainer</li>
+                            <li>Complete diet Guide</li>
+                        </ul>
+
+                        <div class="price mx-auto w-25 h-100 bg-warning">
+                            <p class="pb-3 pr">$100 Per month</p>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-dark enrolll mt-5 mx-auto"> subscribe now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body bg-warning basic">
+                        <div class="basic-head mx-auto w-75">
+                            <h3 class="head">Standard Plan</h3>
+                        </div>
+
+                        <ul class="basic-card">
+                            <li>6 visits per month</li>
+                            <li>complete club tour</li>
+                            <li>Basic trainings</li>
+                            <li>Free first Month Trial</li>
+                            <li>On-demand Workout Classes</li>
+                        </ul>
+
+                        <div class="price mx-auto w-25 h-100">
+                            <p class="pb-3">$45 Per month</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-dark enroll mt-5 mx-auto"> subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+   <!-- TESTIMONIALS -->
+    <iframe scrolling="no" src="slider.html" frameborder="0" class="col-md-12 skider_iframe mt-3"></iframe>
+    
+
+    
+</div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="mt-5">
+    <div class="col">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-5 ">
+                    <h5 class="text-light">Follow us more on</h5>
+                    <a href=""><span class="iconify fa-2x d " data-icon="entypo-social:facebook-with-circle"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="fa-brands:instagram-square"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="akar-icons:youtube-fill"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="bi:linkedin" ></span></a>
+                </div>
+
+
+                <div class="col-md-2 mt-5">
+                    <ul class="footer my-auto">
+                        <a href="">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li>Exercises</li>
+                        </a>
+                        <a href="">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="">
+                            <li>FAQ'S</li>
+                        </a>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-5">
+                    <ul class="footer my-auto">
+                        <a href="">
+                            <li>Careers</li>
+                        </a>
+                        <a href="">
+                            <li>Membership</li>
+                        </a>
+                        <a href="login.html">
+                            <li>Login</li>
+                        </a>
+                        <a href="register.html">
+                            <li>Registration</li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 border-left mt-5">
+
+                    <div class="news">
+                        <span class="iconify text-light" data-icon="quill:inbox-newsletter"></span>
+                        <h3 class="ft-head text-light ">NEWSLETTER</h3>
+                    </div>
+
+                    <div class="np">
+                        <h1 class="ftg-head text-light">Get The Best In Health And Fitness</h1>
+
+                        <input type="email" placeholder="Enter your e-mail" class="email form-control">
+                        <input type="button" value="Submit" class="submit form-control">
+                        <p class="text-light ">By subscribing you agree to the <a href="">Terms of Use</a> and <a
+                                href="">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="row border-top mt-3">
+            <div>
+                <p class="text-light mt-2">&copy; Prime fitness(1982-2022)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myBTN(button1) {
+            if (button1 == 'but1') {
+                window.location.href=("login.html")
+
+            }
+        }
+
+        function myBTn(button2) {
+            if (button2 == 'but2') {
+                window.location.href=("register.html")
+
+            }
+        }
+    </script>
+
+    
+
+
+
+
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var parent = document.querySelector('.splitview'),
+                topPanel = parent.querySelector('.top'),
+                handle = parent.querySelector('.handle'),
+                skewHack = 0,
+                delta = 0;
+
+            // If the parent has .skewed class, set the skewHack var.
+            if (parent.className.indexOf('skewed') != -1) {
+                skewHack = 1000;
+            }
+
+            parent.addEventListener('mousemove', function (event) {
+                // Get the delta between the mouse position and center point.
+                delta = (event.clientX - window.innerWidth / 2) * 0.5;
+
+                // Move the handle.
+                handle.style.left = event.clientX + delta + 'px';
+
+                // Adjust the top panel width.
+                topPanel.style.width = event.clientX + skewHack + delta + 'px';
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

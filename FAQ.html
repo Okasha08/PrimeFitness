@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" type="image/x-icon" href="img/logo/fav2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FAQ</title>
+
+    <style>
+        .collapse {
+            position: relative;
+        }
+
+        .navbar-expand-lg {
+
+            display: grid;
+            align-content: space-evenly;
+
+        }
+
+        ul {
+            padding-top: 5px;
+        }
+
+        .pp li {
+            list-style: inside;
+            font-weight: bold;
+        }
+
+       
+
+        .y {
+            text-align: center;
+        }
+
+        /* .btn:hover {
+            background-color: #762b85;
+            color: white;
+            font-weight: bold;
+        } */
+
+        .btn {
+            font-weight: bold;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+ 
+        <div class="row pre-nav">
+            <div class="col-md-4  "></div>
+            <div class="col-md-4 logo">
+                <img src="img/logo/Hnet.com-image.png" alt="" class="img1">
+            </div>
+            <div class="col-md-4 ">
+
+                <button type="button" class="btn L1 btn-outline-light but-1" id="but1"
+                    onclick="myBTN(this.id)">LOGIN</button>
+
+                <button type="button" class="btn L2 btn-outline-light but-2 " id="but2"
+                    onclick="myBTn(this.id)">REGISTER</button>
+
+
+
+            </div>
+        </div>
+
+       <!--mobile version-->
+<div class="mobile-work-nav">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a class="nav-link dropdown-toggle active s" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">workout </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item font-weight-bold  " href="group.html">Group exercise</a>
+    <a class="dropdown-item font-weight-bold  " href="cycling.html">Cycling</a>
+    <a class="dropdown-item font-weight-bold  " href="Swimming.html">Swimming</a>    
+</div>
+  <a href="Spa.html">Salon & Spa</a>
+  <a href="Fitness Diet Plane.html">Diet</a>
+   <a href="Gallery.html">Gallery</a>
+    <a href="equipment.html">Equipments</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="About us.html">About us</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn btn-warning logs" href="login.html">Login</a>
+  <a class="btn btn-dark logs" href="register.html">Register</a>
+</div>
+<div class="col-12 uper-mobile">
+<div class="row">
+    <div class="col-6">
+        <span style="font-size:22px;cursor:pointer" class="mobile-nav-open" onclick="openNav()">&#9776;  </span>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoside">
+        <img src="img/logo/Hnet.com-image.png" class="form-inline" height="50">
+    </div>
+</div>
+</div>
+</div>
+<!--after login nav-->
+<div class="bg-nav-cont">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+   <a href="group.html" >Group Exercise</a>
+   <a href="cycling.html" >Cycling</a>
+   <a href="Swimming.html" > Swimming</a>
+    <a href="Gallery.html"> Gallery</a>
+  <a href="Fitness Diet Plane.html" > Diet</a>
+  <a href="Spa.html"> Salon & Spa</a>
+  <a href="equipment.html"> Equipments</a>
+  <a href="About us.html"> About us</a>
+  <a href="FAQ.html" class="active"> FAQ</a>
+  <a href="contact.html"> Contact Us</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-angle-down"></i>
+  </a>
+ 
+</div>
+</div>
+</div>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<br>
+<br>
+    <div class="container">
+        <div class="col-md-12"><h1 class="y freq">Frequently Asked Questions(FAQ'S)</h1></div>
+    </div>
+<br>
+<div class="container">
+    <div id="accordion" class="mt-2">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        How Do I cancel My memebership?
+                    </button>
+                </h5>
+            </div>
+
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body pt-3">
+
+                    While we hate to see you cancel your membership, our cancellation process may vary from club to
+                    club, so the best way to begin the cancellation process is to contact your home club location to
+                    confirm the cancellation policy. For most locations, you can send a letter to your home club
+                    requesting to cancel, or you can stop by your home club and cancel in person. If you have other
+                    questions, please contact our Member Services department. Please note that the Member Services
+                    department is open Monday through Friday from 9 am – 6 pm, EST. They will respond to your inquiry as
+                    soon as possible.
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        How Do I Log Into My prime fitness account online?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    That one is easy!   <a href="login.html">Click here. </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        What's The Dress Code?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body pt-5 ">
+                    We’re all for people expressing themselves, but do ask that clothing that may be perceived as
+                    intimidating, revealing, or offensive not be worn in the club. We also do not allow clothing
+                    that may present safety hazards or damage equipment. Examples of clothing that is not allowed
+                    include:
+                    <ul class="pp">
+                        <li>Open-toed shoes or sandals</li>
+                        <li>Mud-caked, greasy, or soiled shoes or clothing</li>
+                        <li>Jeans or pants with prominent grommets</li>
+
+                        <li>Clothing with messaging that a reasonable person may find offensive or otherwise
+                            inappropriate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="mt-5">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-5 ">
+                        <h5 class="text-light">Follow us more on</h5>
+                        <a href=""><span class="iconify fa-2x d "
+                                data-icon="entypo-social:facebook-with-circle"></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="fa-brands:instagram-square"></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="akar-icons:youtube-fill"></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="bi:linkedin"></span></a>
+                    </div>
+
+
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>About Us</li>
+                            </a>
+                            <a href="">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="">
+                                <li>Exercises</li>
+                            </a>
+                            <a href="">
+                                <li>Privacy Policy</li>
+                            </a>
+                            <a href="">
+                                <li>FAQ'S</li>
+                            </a>
+                            <a href="">
+                                <li>Home</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>Careers</li>
+                            </a>
+                            <a href="">
+                                <li>Membership</li>
+                            </a>
+                            <a href="login.html">
+                                <li>Login</li>
+                            </a>
+                            <a href="register.html">
+                                <li>Registration</li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4 border-left mt-5">
+
+                        <div class="news">
+                            <span class="iconify text-light" data-icon="quill:inbox-newsletter"></span>
+                            <h3 class="ft-head text-light ">NEWSLETTER</h3>
+                        </div>
+
+                        <div class="np">
+                            <h1 class="ftg-head text-light">Get The Best In Health And Fitness</h1>
+
+                            <input type="email" placeholder="Enter your e-mail" class="email form-control">
+                            <input type="button" value="Submit" class="submit form-control">
+                            <p class="text-light ">By subscribing you agree to the <a href="">Terms of Use</a> and <a
+                                    href="">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row border-top mt-3">
+                <div>
+                    <p class="text-light mt-2">&copy; Prime fitness(1982-2022)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <script>
+        function myBTN(button1) {
+            if (button1 == 'but1') {
+                window.location.replace("login.html")
+
+            }
+        }
+
+        function myBTn(button2) {
+            if (button2 == 'but2') {
+                window.location.replace("register.html")
+
+            }
+        }
+    </script>
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

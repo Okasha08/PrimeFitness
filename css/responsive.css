@@ -1,0 +1,84 @@
+@media screen and (max-device-width:500px) and (min-device-width: 150px) {
+	.owner-img {
+    width: 262px;
+}
+
+.banner-equip {
+    height: 268px;
+}
+.row.about-row {
+    margin: 0px !important;
+    padding-bottom: 24px;
+}
+.about-us-pl{
+	padding-left: 0px !important;
+}
+.col-md-6.jacuzzi-side {
+    padding-left: 46px;
+    padding-right: 45px;
+}
+.centered{
+	font-size: 26px !important;
+	top: 36% !important;
+}
+
+.contact-res{
+	width: 100% !important;
+}
+.contact-res .row.justify-content-center{
+	margin: 0px !important;
+}
+.my-iframe {
+    margin-left: -53px !important;
+}
+.cycle-para {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.row.about-swimmm {
+    margin: 0px !important;
+}
+.fit-dark {
+    margin-top: 31px !important;
+}
+.col-md-3.diet-mar {
+    text-align: center !important;
+    padding-left: 29px !important;
+    padding-right: 30px !important;
+}
+.row.diet-mar-1-row {
+    margin: 0px;
+}
+.col-md-6.l {
+    margin-left: 30px;
+    display: block;
+}
+.col-md-4.right-serv {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-2.cc {
+    padding-top: 23px;
+}
+.u {
+    margin-left: -10px;
+    padding-right: 0px;
+}
+.col-md-5.b {
+    margin-top: 14px;
+}
+.col-md-3.gg {
+	margin-top: 15px;
+    padding-bottom: 70px;
+}
+.diet-bold{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+}

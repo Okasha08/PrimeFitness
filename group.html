@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" type="image/x-icon" href="img/logo/fav2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+    <title>Group Exercise | PrimeFitnessClub Group Section</title>
+    <style>
+        .text-box {
+            position: relative;
+            top: -132px;
+            left: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 100%;
+            width: 100%;
+
+        }
+        h3 {
+    font-weight: bolder;
+}
+.banner-equip{
+        background-position: center;
+    height: 380px;
+    background-image: url(https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JvdXAlMjBleGVyY2lzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    padding: 5px 15px 5px 15px;
+    background-color: #F1D00A;
+    font-weight: 900;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 60px;
+    display: inline;
+}
+.group {
+    font-family: sans-serif;
+    font-size: 38px;
+}
+.container.mt-4.ex1 {
+    padding-bottom: 25px;
+}
+.fa-hand-o-right{
+    color: #762b85;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+        <div class="row pre-nav">
+            <div class="col-md-4  "></div>
+            <div class="col-md-4 logo">
+                <img src="img/logo/Hnet.com-image.png" alt="" class="img1">
+            </div>
+            <div class="col-md-4 ">
+
+                <button type="button" class="btn L1 btn-outline-light but-1" id="but1"
+                    onclick="myBTN(this.id)">LOGIN</button>
+
+                <button type="button" class="btn L2 btn-outline-light but-2 " id="but2"
+                    onclick="myBTn(this.id)">REGISTER</button>
+
+
+
+            </div>
+        </div>
+
+    
+<!--mobile version-->
+<div class="mobile-work-nav">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a class="nav-link dropdown-toggle active s" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">workout </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item font-weight-bold  " href="group.html">Group exercise</a>
+    <a class="dropdown-item font-weight-bold  " href="cycling.html">Cycling</a>
+    <a class="dropdown-item font-weight-bold  " href="Swimming.html">Swimming</a>    
+</div>
+  <a href="Spa.html">Salon & Spa</a>
+  <a href="Fitness Diet Plane.html">Diet</a>
+   <a href="Gallery.html">Gallery</a>
+    <a href="equipment.html">Equipments</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="About us.html">About us</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn btn-warning logs" href="login.html">Login</a>
+  <a class="btn btn-dark logs" href="register.html">Register</a>
+</div>
+<div class="col-12 uper-mobile">
+<div class="row">
+    <div class="col-6">
+        <span style="font-size:22px;cursor:pointer" class="mobile-nav-open" onclick="openNav()">&#9776;  </span>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoside">
+        <img src="img/logo/Hnet.com-image.png" class="form-inline" height="50">
+    </div>
+</div>
+</div>
+</div>
+<!--after login nav-->
+<div class="bg-nav-cont">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+   <a href="group.html" class="active">Group Exercise</a>
+   <a href="cycling.html">Cycling</a>
+   <a href="Swimming.html"> Swimming</a>
+    <a href="Gallery.html"> Gallery</a>
+  <a href="Fitness Diet Plane.html"> Diet</a>
+  <a href="Spa.html"> Salon & Spa</a>
+  <a href="equipment.html"> Equipments</a>
+  <a href="About us.html"> About us</a>
+  <a href="FAQ.html"> FAQ</a>
+  <a href="contact.html"> Contact Us</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-angle-down"></i>
+  </a>
+ 
+</div>
+</div>
+</div>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<div class="banner-equip" id="ban"></div>
+<div class="centered" id="center">GROUP EXERCISE</div>
+</br>
+
+
+
+
+<!-- Group Exercise -->
+    <div class="container mt-4 ">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h3 class="group" style="color: purple;">GROUP EXERCISE</h3>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-4 ex1">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="" style="text-align:justify;">Group activity may not be a new concept but it has certainly seen massive
+                    international up-trends
+                    over the last twenty years with rapidly rising numbers in spin cycling, aerobic and dance-based
+                    classes and the emergence of CrossFit and its tribe mentality. working out in a motivational pack or
+                    using it as a tool to enhance internal or external competitive performance is fast becoming the
+                    preferred form of exercise.Not only is group fitness having a moment, but it's having a significant
+                    impact on our health, too. Get to know your class members individually. It will build a sense of
+                    trust, make them feel appreciated, and help you bring everyone together. Once you establish regular
+                    members for the class, you could introduce a ‘member of the month’ feature. Create a profile
+                    detailing their fitness progress so far at your studio. Add some information about their life
+                    outside of the gym; this can help members get to know each other better. </p>
+
+            </div>
+            <div class="col-md-6">
+                <img src="img/group/1 pic.jpg" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- Video -->
+    <div class=" video">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="embed-responsive embed-responsive-16by9 ">
+                    <!-- <iframe class="embed-responsive-item " src="img/group.mp4" allowfullscreen ></iframe> -->
+                    <div class="video"><video src="img/group.mp4" controls autoplay></video></div>
+                    <h3 class="text-box">WORK HARDER, <span style="color: yellow;">GET STRONGER</span></h3>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Benefits of Exercise -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-5">
+                <h3 class="group" style="color: purple;">BENEFITS OF GROUPEXERCISE</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <p class=""> It is performed for various reasons, to aid growth and improve strength:</br>
+                    <i class="fa fa-hand-o-right"></i> Meet like minded people and make friends. Training with a mate is great for motivation.Training
+                    with others creates a fun atmosphere – as they say, time flies when you are having fun! <br>
+                    <i class="fa fa-hand-o-right"></i>  No matter what your style is, there is a class for you. Pilates, Yoga, Rev, Bootcamp, Step or
+                    Zumba – everything you desire is under the one roof! Check out the timetable. <br>
+                    <i class="fa fa-hand-o-right"></i>  All of our instructors are qualified and experienced – you’ll get the safest, most effective
+                    workout every time. <br>
+                    <i class="fa fa-hand-o-right"></i>  If you haven’t trained for a while or are new to the gym you’ll have someone making sure you know
+                    what to do. Take the guess work out of your workout. <br>
+                    <i class="fa fa-hand-o-right"></i> All of our classes are”freestyle.” No pre-choreography means variety you can’t get anywhere else.
+                    No boredom! <br></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Condition of Group Exercise -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-5">
+                <h3 class="group" style="color: purple;">CONDITIONS OF GROUPEXERCISE</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="">Groupexercise conditioning workouts enable cyclers to improve their
+                    musculature out of the water, while maintaining a regular swim schedule: <br>
+                    <i class="fa fa-hand-o-right"></i> Don't Skip the Warm-Up. 1 of 11. Warm-ups are a too often overlooked part of the fitness equation. <br>
+                    <i class="fa fa-hand-o-right"></i> Stay Hydrated. 2 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Fit in Cardio. 3 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Lift Weights. 4 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Change Up Your Routine. 5 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Prioritize Protein. 6 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Don't Forget the Post-Workout Stretch. 7 of 11. <br>
+                    <i class="fa fa-hand-o-right"></i> Rest as Needed. 8 of 11 </p> <br>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Cards -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 photo-1">
+                <div class="card " style="width: 18rem;">
+                    <img class="card-img-top" src="img/group/2 pic.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+            <div class="col-md-4 photo-2">
+                <div class="card " style="width: 18rem;">
+                    <img class="card-img-top" src="img/group/3 pic.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+            <div class="col-md-4 photo-3">
+                <div class="card " style="width: 18rem;">
+                    <img class="card-img-top" src="img/group/4 pic.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-5">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-5 ">
+                        <h5 class="text-light">Follow us more on</h5>
+                        <a href=""><span class="iconify fa-2x d " data-icon="entypo-social:facebook-with-circle"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="fa-brands:instagram-square"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="akar-icons:youtube-fill"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="bi:linkedin" ></span></a>
+                    </div>
+    
+    
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>About Us</li>
+                            </a>
+                            <a href="">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="">
+                                <li>Exercises</li>
+                            </a>
+                            <a href="">
+                                <li>Privacy Policy</li>
+                            </a>
+                            <a href="">
+                                <li>FAQ'S</li>
+                            </a>
+                            <a href="">
+                                <li>Home</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>Careers</li>
+                            </a>
+                            <a href="">
+                                <li>Membership</li>
+                            </a>
+                            <a href="login.html">
+                                <li>Login</li>
+                            </a>
+                            <a href="register.html">
+                                <li>Registration</li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                        </ul>
+    
+                    </div>
+    
+                    <div class="col-md-4 border-left mt-5">
+    
+                        <div class="news">
+                            <span class="iconify text-light" data-icon="quill:inbox-newsletter"></span>
+                            <h3  class="ft-head text-light ">NEWSLETTER</h3>
+                        </div>
+    
+                        <div class="np">
+                            <h1 class="ftg-head text-light">Get The Best In Health And Fitness</h1>
+    
+                            <input type="email" placeholder="Enter your e-mail" class="email form-control">
+                            <input type="button" value="Submit" class="submit form-control">
+                            <p class="text-light ">By subscribing you agree to the <a href="">Terms of Use</a> and <a
+                                    href="">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="row border-top mt-3">
+                <div>
+                    <p class="text-light mt-2">&copy; Prime fitness(1982-2022)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        function myBTN(button1) {
+            if (button1 == 'but1') {
+                window.location.href=("login.html")
+
+            }
+        }
+
+        function myBTn(button2) {
+            if (button2 == 'but2') {
+                window.location.href=("register.html")
+
+            }
+        }
+    </script>
+
+
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

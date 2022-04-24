@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" type="image/x-icon" href="img/logo/fav2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Equipments</title>
+	
+</head>
+<style type="text/css">
+	.card{
+		border: none;
+	}
+	.card .card-body {
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+}
+.card-text {
+    font-weight: 900;
+    font-size: 16px;
+}
+.banner-equip{
+        background-position: center;
+    height: 380px;
+    background-image: url(https://images.unsplash.com/photo-1526405098960-78ccf7a1dbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    padding: 5px 15px 5px 15px;
+    background-color: #F1D00A;
+    font-weight: 900;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+</style>
+<body>
+<!-- NAV-BAR -->
+            <div class="row pre-nav">
+            <div class="col-md-4  "></div>
+            <div class="col-md-4 logo">
+                <img src="img/logo/Hnet.com-image.png" alt="" class="img1">
+            </div>
+            <div class="col-md-4 ">
+
+                <button type="button" class="btn L1 btn-outline-light but-1" id="but1"
+                    onclick="myBTN(this.id)">LOGIN</button>
+
+                <button type="button" class="btn L2 btn-outline-light but-2 " id="but2"
+                    onclick="myBTn(this.id)">REGISTER</button>
+
+
+
+            </div>
+        </div>
+     <!--mobile version-->
+<div class="mobile-work-nav">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a class="nav-link dropdown-toggle active s" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">workout </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item font-weight-bold  " href="group.html">Group exercise</a>
+    <a class="dropdown-item font-weight-bold  " href="cycling.html">Cycling</a>
+    <a class="dropdown-item font-weight-bold  " href="Swimming.html">Swimming</a>    
+</div>
+  <a href="Spa.html">Salon & Spa</a>
+  <a href="Fitness Diet Plane.html">Diet</a>
+   <a href="Gallery.html">Gallery</a>
+    <a href="equipment.html">Equipments</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="About us.html">About us</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn btn-warning logs" href="login.html">Login</a>
+  <a class="btn btn-dark logs" href="register.html">Register</a>
+</div>
+<div class="col-12 uper-mobile">
+<div class="row">
+    <div class="col-6">
+        <span style="font-size:22px;cursor:pointer" class="mobile-nav-open" onclick="openNav()">&#9776;  </span>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoside">
+        <img src="img/logo/Hnet.com-image.png" class="form-inline" height="50">
+    </div>
+</div>
+</div>
+</div>
+<!--after login nav-->
+<div class="bg-nav-cont">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+   <a href="group.html" >Group Exercise</a>
+   <a href="cycling.html" >Cycling</a>
+   <a href="Swimming.html" > Swimming</a>
+    <a href="Gallery.html"> Gallery</a>
+  <a href="Fitness Diet Plane.html"> Diet</a>
+  <a href="Spa.html"> Salon & Spa</a>
+  <a href="equipment.html"  class="active"> Equipments</a>
+  <a href="About us.html"> About us</a>
+  <a href="FAQ.html"> FAQ</a>
+  <a href="contact.html"> Contact Us</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-angle-down"></i>
+  </a>
+ 
+</div>
+</div>
+</div>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="banner-equip"></div>
+<div class="centered equi-ban">EQUIPMENTS</div>
+</br>
+
+
+<div class="col-md-12">
+ <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34894/portrait_ratio1x1/400/400/98567edf1eb0512251917d7dae92242e/UY/elevationseries-uprightbike-discoverse3-hd-arcticsilver-standardview-new-crank.png" alt="Card image cap">
+    <div class="card-body">
+      
+      <p class="card-text">ELEVATION SERIES LIFECYCLE® UPRIGHT EXERCISE BIKE</p>
+     
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34900/portrait_ratio1x1/400/400/7b25c6906715bde714258c8f0883cfd3/PZ/elevationseries-recumbentbike-discoverse3-hd-arcticsilver-standardview-new-crank.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">ELEVATION SERIES LIFECYCLE RECUMBENT EXERCISE BIKE</p>
+     
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        
+  <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/162728/portrait_ratio1x1/400/400/c214268bbb7dfd219ee7f5a6c0bce0e5/SQ/life-fitness-club-series.jpg" alt="Card image cap">
+    <div class="card-body">
+      
+      <p class="card-text">CLUB SERIES+ TREADMILL</p>
+     
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34924/portrait_ratio1x1/400/400/bfb6f4dea9f4ac5bf0ffdfd18dfa19b7/vs/elevationseries-crosstrainer-discoverse3-hd-arcticsilver-standardview-1000x1000.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">ELEVATION SERIES ELLIPTICAL CROSS-TRAINER</p>
+      
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1425666/portrait_ratio1x1/400/400/17d2ba7af78a6efdb1c02a1117c035c8/rI/cross-trainer-integrity-cross-trainer-d-black-sl-square.png" alt="Card image cap">
+    <div class="card-body">
+      
+      <p class="card-text">INTEGRITY SERIES ELLIPTICAL CROSS-TRAINER</p>
+      
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1325158/portrait_ratio1x1/400/400/822b73367f8e8256fe5f118713b0d79/JE/recumbent-bike-integrityseries-recumbent-d-sl-black-square.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">INTEGRITY SERIES LIFECYCLE RECUMBENT EXERCISE BIKE</p>
+     
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1425676/portrait_ratio1x1/400/400/4be004c33e432371d28d2ce596299df9/qc/arc-lower-body-lf-arc-trainer-lower-body-sl-black-copy.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">LOWER BODY ARC TRAINER
+        </p>
+      
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1324836/portrait_ratio1x1/400/400/96841e735a2cb9c479d36aea5591b014/HM/arc-total-body-lf-arc-trainer-total-body-sl-black-1-.png" alt="Card image cap">
+    <div class="card-body">
+   
+      <p class="card-text">TOTAL BODY ARC TRAINER</p>
+     
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1325030/portrait_ratio1x1/400/400/51f196c755d91f257100c94f3d3b959/oC/upright-bike-integrity-series-black-sl-console.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">INTEGRITY SERIES LIFECYCLE UPRIGHT EXERCISE BIKE</p>
+      
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34724/portrait_ratio1x1/400/400/81593f60ba3a6f5640ae22599521576d/md/activate-series-upright-bike-with-attachable-tv.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">ACTIVATE SERIES LIFECYCLE UPRIGHT EXERCISE BIKE
+     </p>
+      
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34728/portrait_ratio1x1/400/400/55fed64f4f4b348d9e2849e1bc3d1f10/Xj/activateseries-recumbentbike.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">ACTIVATE SERIES LIFECYCLE RECUMBENT EXERCISE BIKE</p>
+     
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1325030/portrait_ratio1x1/400/400/51f196c755d91f257100c94f3d3b959/oC/upright-bike-integrity-series-black-sl-console.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">ACTIVATE SERIES ELLIPTICAL CROSS-TRAINER</p>
+      
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/34876/portrait_ratio1x1/400/400/15fb145ac2ee47a06011c2575e16b6ea/tM/elevationseries-treadmill-discoverse3-hd-arcticsilver-standardview-1000x1000.png" alt="Card image cap">
+    <div class="card-body">
+   
+      <p class="card-text">ELEVATION SERIES TREADMILL</p>
+      
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1324402/portrait_ratio1x1/400/400/d738811f78b8767dbce999db8bad2d1c/Rv/powermill-climber-black-with-sl-console.png" alt="Card image cap">
+    <div class="card-body">
+     
+      <p class="card-text">POWERMILL CLIMBER</p>
+     
+    </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+    <img class="card-img-top" src="https://www.lifefitness.com/resource/image/1325284/portrait_ratio1x1/400/400/5211766ff9b7868bd87a18e5a14840fc/Zj/tread-integrityseries-treadmill-d-sl-black-square.png" alt="Card image cap">
+    <div class="card-body">
+    
+      <p class="card-text">INTEGRITY SERIES TREADMILL</p>
+      
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- FOOTER -->
+<footer class="mt-5"> 
+    <div class="col">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-5 ">
+                    <h5 class="text-light">Follow us more on</h5>
+                    <a href=""><span class="iconify fa-2x d " data-icon="entypo-social:facebook-with-circle"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="fa-brands:instagram-square"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="akar-icons:youtube-fill"
+                        ></span></a>
+                    <a href=""><span class="iconify fa-2x d ml-2" data-icon="bi:linkedin" ></span></a>
+                </div>
+
+
+                <div class="col-md-2 mt-5">
+                    <ul class="footer my-auto">
+                        <a href="">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li>Exercises</li>
+                        </a>
+                        <a href="">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="">
+                            <li>FAQ'S</li>
+                        </a>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-5">
+                    <ul class="footer my-auto">
+                        <a href="">
+                            <li>Careers</li>
+                        </a>
+                        <a href="">
+                            <li>Membership</li>
+                        </a>
+                        <a href="login.html">
+                            <li>Login</li>
+                        </a>
+                        <a href="register.html">
+                            <li>Registration</li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 border-left mt-5">
+
+                    <div class="news">
+                        <span class="iconify text-light" data-icon="quill:inbox-newsletter"></span>
+                        <h3 class="ft-head text-light ">NEWSLETTER</h3>
+                    </div>
+
+                    <div class="np">
+                        <h1 class="ftg-head text-light">Get The Best In Health And Fitness</h1>
+
+                        <input type="email" placeholder="Enter your e-mail" class="email form-control">
+                        <input type="button" value="Submit" class="submit form-control">
+                        <p class="text-light ">By subscribing you agree to the <a href="">Terms of Use</a> and <a
+                                href="">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="row border-top mt-3">
+            <div>
+                <p class="text-light mt-2">&copy; Prime fitness(1982-2022)</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</footer> 
+</body>
+
+
+</html>

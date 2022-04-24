@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/Maham%20sheikh/Music/diet/img/index%20.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="img/logo/fav2.ico">
+
+    <meta name="Description" content="Enter your description here">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="file:///C:/Users/Maham%20sheikh/Music/diet/img/assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fitness Diet Plane</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        } */
+
+        
+
+        .top-image {
+            background-image: url(./img/diet/logo\ 1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+
+        @media screen and (max-width:325px) {
+            body{
+                overflow-x: hidden;
+                
+            }
+            
+        }
+        .banner-equip{
+        background-position: center;
+    height: 380px;
+    background-image: url(https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    padding: 5px 15px 5px 15px;
+    background-color: #F1D00A;
+    font-weight: 900;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+ .fit-dark{
+    margin-top: 77px;
+     font-family: sans-serif;
+    color: #762b85 !important;
+}
+    </style>
+</head>
+
+<body>
+    
+        <div class="row pre-nav">
+            <div class="col-md-4  "></div>
+            <div class="col-md-4 logo">
+                <img src="img/logo/Hnet.com-image.png" alt="" class="img1">
+            </div>
+            <div class="col-md-4 ">
+
+                <button type="button" class="btn L1 btn-outline-light but-1" id="but1"
+                    onclick="myBTN(this.id)">LOGIN</button>
+
+                <button type="button" class="btn L2 btn-outline-light but-2 " id="but2"
+                    onclick="myBTn(this.id)">REGISTER</button>
+
+
+
+            </div>
+        </div>
+
+       <!--mobile version-->
+<div class="mobile-work-nav">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a class="nav-link dropdown-toggle active s" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">workout </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item font-weight-bold  " href="group.html">Group exercise</a>
+    <a class="dropdown-item font-weight-bold  " href="cycling.html">Cycling</a>
+    <a class="dropdown-item font-weight-bold  " href="Swimming.html">Swimming</a>    
+</div>
+  <a href="Spa.html">Salon & Spa</a>
+  <a href="Fitness Diet Plane.html">Diet</a>
+   <a href="Gallery.html">Gallery</a>
+    <a href="equipment.html">Equipments</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="About us.html">About us</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn btn-warning logs" href="login.html">Login</a>
+  <a class="btn btn-dark logs" href="register.html">Register</a>
+</div>
+<div class="col-12 uper-mobile">
+<div class="row">
+    <div class="col-6">
+        <span style="font-size:22px;cursor:pointer" class="mobile-nav-open" onclick="openNav()">&#9776;  </span>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoside">
+        <img src="img/logo/Hnet.com-image.png" class="form-inline" height="50">
+    </div>
+</div>
+</div>
+</div>
+<!--after login nav-->
+<div class="bg-nav-cont">
+<div class="container">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+   <a href="group.html" >Group Exercise</a>
+   <a href="cycling.html" >Cycling</a>
+   <a href="Swimming.html" > Swimming</a>
+    <a href="Gallery.html"> Gallery</a>
+  <a href="Fitness Diet Plane.html" class="active"> Diet</a>
+  <a href="Spa.html"> Salon & Spa</a>
+  <a href="equipment.html"> Equipments</a>
+  <a href="About us.html" > About us</a>
+  <a href="FAQ.html"> FAQ</a>
+  <a href="contact.html"> Contact Us</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-angle-down"></i>
+  </a>
+ 
+</div>
+</div>
+</div>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <!-- ABOUT US -->
+    <div class="banner-equip"></div>
+<div class="centered">DIET</div>
+</br>
+
+
+   
+
+    <!-- Tools Goal -->
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2 class="font-weight-bold diet-bold" style=" font-family: sans-serif; color: #762b85;">The Tools for Your Goals</h2>
+                <p class="text-center">Trying to lose weight, tone up, lower your BMI, or invest in your overall health?
+                    We give you the
+                    right features to hit your goals.</p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+ 
+    <div class="ccontainer-fluid mt-5">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 diet-mar">
+                <img src="img/diet/2 pic.svg" style="" alt="">
+                <h5 class="font-weight-bold ml-1 text-center" style=" font-family: sans-serif; color: #762b85;">Learn. Track. Improve.</h5>
+                <p class="ml-1 text-center">Keeping a food diary helps you understand your habits and increases your
+                    likelihood of hitting your goals.</p>
+            </div>
+            <div class="col-md-3 diet-mar">
+                <img src="img/diet/4 pic.svg" style="" alt="">
+                <h5 class="font-weight-bold ml-1 text-center" style=" font-family: sans-serif; color: #762b85;">Stay Motivated</h5>
+                <p class="ml-1 text-center">Join the World’s Largest Fitness Community for advice, tips, and support
+                    24/7.</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</br>
+ <!-- Main content -->
+    <div class="container-fluid">
+        <div class="row diet-mar-1-row">
+            <div class="col-md-12 top-image">
+                <h1 class="font-weight-bold text-center ml-5 text-dark fit-dark">Fitness starts with <br> what you eat.</h1> <br>
+                <p class="font-weight-bold text-center text-dark ml-5" style="font-size: 20px;"> Take control of your
+                    goals. <br> Track calories, break
+                    down ingredients, <br> and log activities
+                    with PrimeFitnessDiet PLan.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Victory Stories -->
+</br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="font-weight-bolder text-center" style="font-size: 40px; font-family:sans-serif;color: #762b85;">Victory Stories</h2>
+            </div>
+        </div>
+    </div>
+</br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="">
+                    <img class="card-img-top" src="img/diet/card img 1.webp" alt="" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title" style=" font-family: sans-serif; color: #762b85;">Education helped her lose 30 pound</h4>
+                        <p class="card-text">MyPrimeFitness Diet Plane gave me a wake up call to the way I was eating
+                            and made things
+                            clear what I needed to change.</p>
+                            <p>-Stephanine</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="">
+                    <img class="card-img-top" src="img/diet/card img 2.webp" alt="image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title" style=" font-family: sans-serif; color: #762b85;">From Fast-food addict to mindful eater.</h4>
+                        <p class="card-text">I naturally fell into the concept of mindful eating... it takes 15-20
+                            minutes for the food to hit your stomach, so I started eating slower.
+                        </p>
+                        <p>-Eric</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="">
+                    <img class="card-img-top" src="img/diet/card img 3.webp" alt="image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title" style=" font-family: sans-serif; color: #762b85;">She was a eager to make a change.</h4>
+                        <p class="card-text">Now, when I have friends starting to run and getting frustrated, I tell them to just stick with it, eventually, you'll get faster.
+                        </p>
+                        <p>-Lori</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-5 ">
+                        <h5 class="text-light">Follow us more on</h5>
+                        <a href=""><span class="iconify fa-2x d " data-icon="entypo-social:facebook-with-circle"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="fa-brands:instagram-square"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="akar-icons:youtube-fill"
+                            ></span></a>
+                        <a href=""><span class="iconify fa-2x d ml-2" data-icon="bi:linkedin" ></span></a>
+                    </div>
+    
+    
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>About Us</li>
+                            </a>
+                            <a href="">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="">
+                                <li>Exercises</li>
+                            </a>
+                            <a href="">
+                                <li>Privacy Policy</li>
+                            </a>
+                            <a href="">
+                                <li>FAQ'S</li>
+                            </a>
+                            <a href="">
+                                <li>Home</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mt-5">
+                        <ul class="footer my-auto">
+                            <a href="">
+                                <li>Careers</li>
+                            </a>
+                            <a href="">
+                                <li>Membership</li>
+                            </a>
+                            <a href="login.html">
+                                <li>Login</li>
+                            </a>
+                            <a href="register.html">
+                                <li>Registration</li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                            </a>
+                        </ul>
+    
+                    </div>
+    
+                    <div class="col-md-4 border-left mt-5">
+    
+                        <div class="news">
+                            <span class="iconify text-light" data-icon="quill:inbox-newsletter"></span>
+                            <h3 class="ft-head text-light ">NEWSLETTER</h3>
+                        </div>
+    
+                        <div class="np">
+                            <h1 class="ftg-head text-light">Get The Best In Health And Fitness</h1>
+    
+                            <input type="email" placeholder="Enter your e-mail" class="email form-control">
+                            <input type="button" value="Submit" class="submit form-control">
+                            <p class="text-light ">By subscribing you agree to the <a href="">Terms of Use</a> and <a
+                                    href="">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="row border-top mt-3">
+                <div>
+                    <p class="text-light mt-2">&copy; Prime fitness(1982-2022)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+ <script>
+        function myBTN(button1) {
+            if (button1 == 'but1') {
+                window.location.href=("login.html")
+
+            }
+        }
+
+        function myBTn(button2) {
+            if (button2 == 'but2') {
+                window.location.href=("register.html")
+
+            }
+        }
+    </script>
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
